@@ -77,7 +77,7 @@ p {
 .btn {
   position: relative;
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -219,7 +219,7 @@ p {
 
 .navbar-expand-lg .navbar-nav .nav-link {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -240,7 +240,7 @@ p {
 
 .navbar-brand {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -261,7 +261,6 @@ p {
 
 .navbar .toggle i {
   color: var(--gray, #ABB2BF);
-
 }
 
 .navbar .sidenav {
@@ -304,7 +303,6 @@ p {
 
 .navbar .sidenav ul li:hover {
   background: #fff;
-
 }
 
 .navbar .sidenav ul li:hover a {
@@ -348,7 +346,7 @@ p {
 
 .header .header-description {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -427,7 +425,7 @@ p {
 
 .container-qoute .box p {
   color: #FFF;
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -470,7 +468,7 @@ p {
 
 .section-title {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -498,7 +496,7 @@ p {
 
 .projects .projects-header a {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -552,7 +550,7 @@ p {
 
 .technologies ul li {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -563,7 +561,7 @@ p {
 
 .projects .card .card-title {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -573,7 +571,7 @@ p {
 
 .projects .card .card-text {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -699,7 +697,7 @@ p {
 
 .grid-skills .box-skills .header-skills h4 {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -718,7 +716,7 @@ p {
 
 .grid-skills .box-skills .body-skills ul li {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -813,7 +811,7 @@ p {
 
 .about-me .content p {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -844,7 +842,7 @@ p {
 .contacts p {
   margin-top: 45px;
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -857,7 +855,7 @@ p {
 
 .contacts .box-form h4 {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -888,7 +886,7 @@ p {
 
 .box-form label {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -916,7 +914,7 @@ p {
 
 .box-contacts h4 {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -928,7 +926,7 @@ p {
 .box-contacts ul li {
   display: block;
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -975,7 +973,7 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1006,7 +1004,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
@@ -1031,7 +1029,7 @@ p {
   background: transparent;
   padding: 5px 15px;
   display: inline-block;
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
   margin-bottom: 10px;
@@ -1041,7 +1039,7 @@ p {
 
 .resume .resume-item ul li {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
 
 }
 
@@ -1055,7 +1053,7 @@ footer {
 
 footer .d-flex a {
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1064,7 +1062,7 @@ footer .d-flex a {
 
 footer .job_title {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1074,7 +1072,7 @@ footer .job_title {
 
 footer .media {
   color: var(--white, #FFF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -1106,7 +1104,7 @@ footer .icons ul li a {
 footer .copyright {
   text-align: center;
   color: var(--gray, #ABB2BF);
-  font-family: Fira Code;
+  font-family: "Fira Code";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
