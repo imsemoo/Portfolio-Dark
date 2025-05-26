@@ -39,7 +39,7 @@ $(document).ready(function () {
       }
     );
   });
-});
+}});
 
 // JavaScript to handle project filtering
 document.addEventListener("DOMContentLoaded", function () {

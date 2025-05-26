@@ -1,545 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Islam</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Responsive meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Start Links tree -->
-    <div class="links-tree">
-      <ul>
-        <li>
-          <img src="img/Line_Stroke.svg" alt="Logo" loading="lazy">
-        </li>
-        <li class="github">
-          <a href="https://github.com/imsemoo">
-            <i class="fa-brands fa-github fa-lg"></i>          
-          </a>
-        </li>
-        <li class="figma">
-          <a href="#">
-            <i class="fa-brands fa-figma fa-lg"></i>          
-          </a>
-        </li>
-        <li class="linkedin">
-          <a href="https://www.linkedin.com/in/imsemooo/">
-            <i class="fa-brands fa-linkedin fa-lg"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- End Links tree -->
+  <!-- Primary SEO Meta Tags -->
+  <title>Eslam - Front-End Developer & Team Leader at Taktek</title>
+  <meta name="description"
+    content="Eslam is a Front-End Developer & Team Leader at Taktek with over 5 years of experience crafting responsive websites, news platforms, and modern web experiences." />
+  <meta name="keywords"
+    content="Front-End Developer, UI/UX, GSAP, JavaScript, HTML, CSS, Eslam, Portfolio, Web Design, Responsive, Developer, Taktek, Team Leader" />
+  <meta name="author" content="Eslam" />
 
-    <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="Logo.png" loading="lazy">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Eslam - Front-End Developer & Team Leader at Taktek" />
+  <meta property="og:description"
+    content="Eslam is a Front-End Developer & Team Leader at Taktek with over 5 years of experience crafting responsive websites, news platforms, and modern web experiences." />
+  <meta property="og:image" content="img/avatar.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Eslam - Front-End Developer & Team Leader at Taktek" />
+  <meta name="twitter:description"
+    content="Eslam is a Front-End Developer & Team Leader at Taktek with over 5 years of experience crafting responsive websites, news platforms, and modern web experiences." />
+  <meta name="twitter:image" content="img/avatar.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- CSS and External Libraries -->
+  <link rel="stylesheet" href="css/normalize.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 
+      =========================================
+      START Links Tree
+      =========================================
+    -->
+  <div class="links-tree" data-aos="fade-right">
+    <ul>
+      <li>
+        <img src="img/Line_Stroke.svg" alt="Vertical line decorative stroke" loading="lazy" />
+      </li>
+      <li class="github">
+        <a href="https://github.com/imsemoo" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github fa-lg"></i>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon">
-            <i class="fa-solid fa-bars fa-lg" id="menu-icon"></i>
+      </li>
+      <li class="figma">
+        <a href="#" target="_blank" rel="noopener">
+          <i class="fa-brands fa-figma fa-lg"></i>
+        </a>
+      </li>
+      <li class="linkedin">
+        <a href="https://www.linkedin.com/in/imsemooo/" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin fa-lg"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- End Links Tree -->
 
-          </span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav ml-auto"> 
-            <!-- Add ml-auto class here -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#scroll_header"><span>#</span>home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scroll_works"><span>#</span>works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scroll_skills"><span>#</span>skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scroll_about"><span>#</span>about-me</a> 
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scroll_resume"><span>#</span>resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#scroll_contacts"><span>#</span>contacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">EN <img src="img/arrow-down.png" alt="arrow down" loading="lazy"></a>
-            </li>
-          </ul>
-          
-        </div>
+  <!-- 
+      =========================================
+      START Navbar
+      =========================================
+    -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.svg" alt="Eslam personal logo" loading="lazy" width="140px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars fa-lg" id="menu-icon"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#scroll_header">
+              <span>#</span>home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scroll_works"> <span>#</span>works </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scroll_skills">
+              <span>#</span>skills
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scroll_about">
+              <span>#</span>about-me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scroll_resume">
+              <span>#</span>resume
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scroll_contacts">
+              <span>#</span>contacts
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              EN
+              <img src="img/arrow-down.png" alt="Language arrow down" loading="lazy" />
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- End Navbar-->
+    </div>
+  </nav>
+  <!-- End Navbar-->
 
-    <!-- Start Header-->
-    <div class="header" id="scroll_header">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="header-title">
-              Eslam is a <span class="header-subtitle">web designer</span> and <span class="header-subtitle">front-end developer</span>
-            </h2>
-            <p class="header-description">He crafts responsive websites where technologies meet creativity</p>
+  <!-- 
+      =========================================
+      START Header
+      =========================================
+    -->
 
-            <a href="#" class="btn ">Contact me!!</a>
-          </div>
+  <header class="header" id="scroll_header" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <!-- Text Section -->
+        <div class="col-md-6">
+          <h1 class="header-title">
+            Eslam is a <span class="header-subtitle">Team Leader</span> and
+            <span class="header-subtitle">Senior Front-End Developer</span>
+          </h1>
+          <p class="header-description">
+            Crafting modern news platforms, interactive podcast portals, and
+            innovative web experiences with advanced animations and
+            user-centric design.
+          </p>
+          <a href="#scroll_contacts" class="btn">Let's Collaborate!</a>
+        </div>
 
-          <div class="col-md-6">
-              <div class="header-images">
-                <img src="img/frame-back.svg" alt="Frame" class="frame" loading="lazy">
-                <img src="img/avatar.png" alt="Avatar" class="avatar" loading="lazy">
-                <img src="img/Dots.svg" alt="Dots" class="dots" loading="lazy">
-              </div>
+        <!-- Image Section -->
+        <div class="col-md-6">
+          <div class="header-images" data-aos="zoom-in">
+            <img src="img/frame-back.svg" alt="Frame background illustration" class="frame" loading="lazy" />
+            <img src="img/avatar.jpg" alt="Eslam personal avatar" class="avatar" loading="lazy" width="90%" />
+            <img src="img/Dots.svg" alt="Decorative dotted illustration" class="dots" loading="lazy" />
           </div>
         </div>
       </div>
     </div>
-    <!-- End Header-->
+  </header>
+  <!-- End Header -->
 
-    <!-- Start Quote-->
+  <!-- End Header-->
+
+  <!-- 
+      =========================================
+      START Quote
+      =========================================
+    -->
+  <section class="container" data-aos="fade-left">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container-qoute">
+          <div class="quote box">
+            <img src="img/quotation.svg" alt="Quotation icon top" class="top-icon quotation" loading="lazy" />
+            <p>With great power comes great electricity bill</p>
+            <img src="img/quotation.svg" alt="Quotation icon bottom" class="bottom-icon quotation" loading="lazy" />
+          </div>
+          <div class="sub-qoute box">
+            <p>- Dr. Who</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Quote-->
+
+  <!-- 
+      =========================================
+      START Projects
+      =========================================
+    -->
+  <section class="projects" id="scroll_works" data-aos="fade-up">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="container-qoute">
-            <div class="quote box">
-              <img src="img/quotation.svg" alt="quotation" class="top-icon quotation" loading="lazy">>
-              <p>With great power comes great electricity bill</p>
-              <img src="img/quotation.svg" alt="quotation" class="bottom-icon quotation" loading="lazy">>
-
-            </div>
-            <div class="sub-qoute box">
-              <p>- Dr. Who</p>
-            </div>
+          <div class="projects-header">
+            <h2 class="projects-title section-title">
+              <span>#</span>projects
+            </h2>
+            <a href="#" aria-label="View all projects">View all ~~></a>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Quote-->
-
-    <!-- Start Projects-->
-    <div class="projects" id="scroll_works">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="projects-header">
-              <h2 class="projects-title section-title"><span>#</span>projects</h2>
-              <a href="#">View all ~~></a>
-            </div>
-            <div id="filter-gallary">
-              <button class="btn active" data-category="all">All</button>
-              <button class="btn" data-category="Web-design">Web Design</button>
-              <button class="btn" data-category="WordPress">WordPress</button>
-            </div>
-            <div class="grid-container">
-              <div class="card"  data-category="Web-design">
-                <div class="card-img-top">
-                  <img src="img/besa/home-page-besa.png" loading="lazy" alt="Besa Image">
-
-                </div>
-                <div class="technologies">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jquery</li>
-                    <li>grid-Bootstrap</li>
-                    <li>Fontawesome</li>
-                    <li>Figma </li>
-                    <li>Photoshop </li>                    
-                  </ul>
-                </div>
-                <div class="card-body">
-                 
-                  <h5 class="card-title">Besa</h5>
-                  <p class="card-text">Education site for studying abroad: It was an Figma file and I converted it to code</p>
-                  <div class="buttons">
-                    <a href="https://besa.intimedev.com" class="btn">Live &lt;~></a>                 
-                    <a href="https://github.com/imsemoo/besa.git" class="btn">Code <i class="fa-brands fa-github"></i> </a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="card"  data-category="Web-design">
-                <div class="card-img-top">
-                  <img src="img/tv/HandsOnTV_Pages_2.png" loading="lazy" alt="HandsOnTV Image">
-                </div>
-                <div class="technologies">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jquery</li>
-                    <li>grid-Bootstrap</li>
-                    <li>Fontawesome</li>
-                    <li>Adobe XD  </li>
-                    <li>Photoshop </li> 
-
-                  </ul>
-                </div>
-                <div class="card-body">
-                 
-                  <h5 class="card-title">HandsOnTV</h5>
-                  <p class="card-text">Entertainment video site: It was an Adobe XD file and I converted it to code</p>
-                  <div class="buttons">
-                    <a href="https://handsontv.co.uk/" class="btn">Live &lt;~></a>                    
-                  </div>
-                </div>
-              </div>
-              <div class="card"  data-category="WordPress">
-                <div class="card-img-top">
-                  <img src="img/visaoman/1.png"  alt="VisaOman Image" loading="lazy">
-
-                </div>
-                <div class="technologies">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jquery</li>
-                    <li>WordPress</li>
-
-                  </ul>
-                </div>
-                <div class="card-body">
-                 
-                  <h5 class="card-title">visaOman</h5>
-                  <p class="card-text">Sultanate of Oman travel visa website: I designed it on the WordPress platform </p>
-                  <div class="buttons">
-                    <a href="https://visaoman.com/" class="btn">Live &lt;~></a>                    
-                  </div>
-                </div>
-              </div>
-              <div class="card"  data-category="Web-design">
-                <div class="card-img-top">
-                  <img src="img/cn/couriernow-home_1.png"  alt="CourierNow Image" loading="lazy">
-
-                </div>
-                <div class="technologies">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jquery</li>
-                    <li>grid-Bootstrap</li>
-                    <li>Fontawesome</li>
-                    <li>Adobe XD  </li>
-                    <li>Photoshop </li> 
-                  </ul>
-                </div>
-                <div class="card-body">
-                 
-                  <h5 class="card-title">CourierNow</h5>
-                  <p class="card-text">It was an Adobe XD file and I converted it to code</p>
-                  <div class="buttons">
-                    <a href="https://couriernow.com.au/" class="btn">Live &lt;~></a>                   
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Projects-->
-
-    <!-- Start skills-->
-    <div class="skills" id="scroll_skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="section-title skills-title"><span>#</span>skills</h2>
-          </div>
-          <div class="col-md-5" style="text-align: center; margin-top: 20px;">
-            <div class="design-image">
-              <img src="./img/background-skills-2.png" alt="background">
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="grid-skills">
-              <div class="box-skills">
-                <div class="header-skills">
-                  <h4>Languages</h4>
-                </div>
-                <div class="body-skills">
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="box-skills">
-                <div class="header-skills">
-                  <h4>Tools</h4>
-                </div>
-                <div class="body-skills">
-                  <ul>
-                    <li>Adobe XD</li>
-                    <li>Photoshop</li>
-                    <li>Figma</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="box-skills">
-                <div class="header-skills">
-                  <h4>Library</h4>
-                </div>
-                <div class="body-skills">
-                    <ul>
-                      <li>jQuery (a JavaScript library)</li>
-                    </ul>
-                </div>
-              </div>
-              <div class="box-skills" style="grid-column: 2/3;">
-                <div class="header-skills">
-                  <h4>Frameworks</h4>
-                </div>
-                <div class="body-skills">
-                  <ul>
-                    <li>Vue.Js</li>
-                    <li>Cakphp</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="box-skills" style="grid-column: 3/4;">
-                <div class="header-skills">
-                  <h4>Other</h4>
-                </div>
-                <div class="body-skills">
-                  <ul>
-                    <li>WordPress (Content Management System)</li>
-                    <li>Fontawesome (icon set)</li>
-                    <li>MYSQL (database management system)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div id="filter-gallary">
+            <button class="btn active" data-category="all">All</button>
+            <button class="btn" data-category="Web-design">Web Design</button>
+            <button class="btn" data-category="WordPress">WordPress</button>
+            <button class="btn" data-category="ui-ux">UI/UX</button>
+            <button class="btn" data-category="ui-ux">Apps Flutter</button>
           </div>
 
-        </div>
-      </div>
-    </div>
-    <!-- End skills-->
-
-
-    <!-- Start About Me-->
-    <div class="about-me" id="scroll_about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="section-title about-me-title"><span>#</span>about-me</h2>
-            <div class="content">
-                <p>Hello, I'm Eslam!</p>
-                <p>
-                  I am a self-taught front-end developer based in Qalyubia, Egypt. 
-                  My expertise lies in developing responsive websites from scratch and transforming them into modern, 
-                  user-friendly web experiences.
-                </p>
-                <p>For over 2 years, I have passionately pursued my creative endeavors, 
-                  channeling my knowledge and skills into creating exceptional websites. 
-                  Throughout this journey, I have helped numerous clients establish a strong online presence.
-                </p>
-                <p>
-                  Continuously striving to stay ahead, I eagerly embrace the latest technologies and frameworks to 
-                  enhance my abilities and deliver the best results for my clients.
-                </p>
-
-                <a href="#" class="btn">Read more -></a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="images">
-              <img src="img/about-avatar.png" alt="Avatar About Me" loading="lazy">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End About Me-->
-
-    <!--Start resume-->
-    <div class="resume" id="scroll_resume">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="section-title resume-title"><span>#</span>resume</h2>
-            <div class="grid-col2">
-              <div class="left-col">
-                  <h3 class="resume-title">Work Experience</h3>
-                  <div class="resume-item">
-                      <h4>Frontend Developer @ InTimeDev ( outsource to SilverTrees ) <span class="text-bold">(Full-time)</span> </h4>
-                      <h5>2020 - Present</h5>
-                      <p><em>Nasr City , Egypt </em></p>
-                      <ul>
-                        <li>Frontend Developer @ InTimeDev ( outsource to SilverTrees )</li>
-                        <li>I had the good fortune to work as a Front-end Developer at InTimeDev, they have a good team, I learned a lot of good things from them, I built a lot of projects from scratch [own programming - wordpress] by [PSD, XD].</li>
-                       
-                      </ul>
-                  </div>
-                  <!-- 
-                  <h3 class="resume-title">Education</h3>
-                  <div class="resume-item">
-                      <h4>Master of Fine Arts &amp; Graphic Design</h4>
-                      <h5>2015 - 2016</h5>
-                      <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                      <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-                  </div>
-                  <div class="resume-item">
-                      <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-                      <h5>2010 - 2014</h5>
-                      <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                      <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-                  </div>-->
-
+          <!-- Project Cards Grid -->
+          <div class="grid-container">
+            <!-- Card 1 -->
+            <div class="card" data-category="Web-design" data-aos="fade-right">
+              <div class="card-img-top">
+                <img src="img/besa/cover.svg" loading="lazy" alt="Besa education website preview" />
               </div>
-              <!--
-              <div class="right-col">
-
-                  <h3 class="resume-title">Professional Experience</h3>
-                  <div class="resume-item">
-                      <h4>Frontend Developer @ InTimeDev ( outsource to SilverTrees ) <span class="text-bold">(Full-time)</span> </h4>
-                      <h5>2020 - Present</h5>
-                      <p><em>Nasr City , Egypt </em></p>
-                      <ul>
-                        <li>Frontend Developer @ InTimeDev ( outsource to SilverTrees )</li>
-                        <li>I had the good fortune to work as a Front-end Developer at InTimeDev, they have a good team, I learned a lot of good things from them, I built a lot of projects from scratch [own programming - wordpress] by [PSD, XD].</li>
-                       
-                      </ul>
-                  </div>
-                  
-                  <div class="resume-item">
-                      <h4>Graphic design specialist</h4>
-                      <h5>2017 - 2018</h5>
-                      <p><em>Stepping Stone Advertising, New York, NY</em></p>
-                      <ul>
-                        <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                        <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                        <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                        <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                      </ul>
-                  </div>
-                 
-              </div>
-               -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        <!--End resume-->
-
-    <!-- Start contacts-->
-    <div class="contacts" id="scroll_contacts">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="section-title contacts-title"><span>#</span>contacts</h2>
-            <p>
-              I’m interested in freelance opportunities. However, if you have other request or question, 
-              don’t hesitate to contact me
-            </p>
-          </div>
-          <div class="col-md-6">
-            <div class="box-contacts">
-              <h4>Message me here</h4>
+              <div class="technologies">
                 <ul>
-                  <li><a href="mailto:en.developer2@gmail.com"><i class="fa fa-envelope"></i> Contact Us</a></li>
-                  <li><a href="tel:+201002952013"><i class="fa-solid fa-phone"></i>+201002952013</a></li>
-                  <li><a href="https://www.linkedin.com/in/imsemooo/" target="_blank"><i class="fa-brands fa-linkedin" ></i>islam-abdelnasser </a></li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>grid-Bootstrap</li>
+                  <li>Fontawesome</li>
+                  <li>Figma</li>
+                  <li>Photoshop</li>
                 </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Besa</h5>
+                <p class="card-text">
+                  Education site for studying abroad: It was a Figma file and
+                  I converted it to code
+                </p>
+                <div class="buttons">
+                  <a href="https://www.besaeg.com/" class="btn" target="_blank" rel="noopener">
+                    Live &lt;~>
+                  </a>
+                  <a href="https://github.com/imsemoo/besa.git" class="btn" target="_blank" rel="noopener">
+                    Code <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" data-category="Web-design" data-aos="fade-left">
+              <div class="card-img-top">
+                <img src="img/tv/HandsOnTV_Pages_2.png" loading="lazy" alt="HandsOnTV entertainment site preview" />
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>grid-Bootstrap</li>
+                  <li>Fontawesome</li>
+                  <li>Adobe XD</li>
+                  <li>Photoshop</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">HandsOnTV</h5>
+                <p class="card-text">
+                  Entertainment video site: It was an Adobe XD file and I
+                  converted it to code
+                </p>
+                <div class="buttons">
+                  <a href="https://handsontv.co.uk/" class="btn" target="_blank" rel="noopener">
+                    Live &lt;~>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" data-category="WordPress" data-aos="fade-right">
+              <div class="card-img-top">
+                <img src="img/visaoman/1.png" alt="VisaOman travel site preview" loading="lazy" />
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>WordPress</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">VisaOman</h5>
+                <p class="card-text">
+                  Sultanate of Oman travel visa website: I designed it on the
+                  WordPress platform
+                </p>
+                <div class="buttons">
+                  <a href="https://visaoman.com/" class="btn" target="_blank" rel="noopener">
+                    Live &lt;~>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card" data-category="Web-design" data-aos="fade-left">
+              <div class="card-img-top">
+                <img src="img/cn/couriernow-home_1.png" alt="CourierNow website preview" loading="lazy" />
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>grid-Bootstrap</li>
+                  <li>Fontawesome</li>
+                  <li>Adobe XD</li>
+                  <li>Photoshop</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CourierNow</h5>
+                <p class="card-text">
+                  It was an Adobe XD file and I converted it to code
+                </p>
+                <div class="buttons">
+                  <a href="https://couriernow.com.au/" class="btn" target="_blank" rel="noopener">
+                    Live &lt;~>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- End Project Cards Grid -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects-->
 
-          <div class="col-md-12">
-              <div class="box-form">
-                <h4>Contact Me</h4>
-                  <form action="contact.php" method="POST">
-                    <div class="d-flex">
-                      <div class="form-floating">
-                        <input type="text" id="name" name="name" class="form-control" placeholder="name"  required >
-                        <label for="name">Name:</label>
-                      </div>
-                      
-                        <div class="form-floating">
-                          <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com"  required >
-                          <label for="email">Email:</label>
-                        </div>
-                    </div>
-                    <div class="form-floating">
-                      <textarea id="message" name="message" rows="8" style="height: 180px;" class="form-control" placeholder="Message" required>Please Write message </textarea>
-                      <label for="message">Message:</label>
-                    </div>
-                    <button type="submit" class="btn">Send</button>
-                </form>
-                
+  <!-- 
+      =========================================
+      START Skills
+      =========================================
+    -->
+  <section class="skills" id="scroll_skills" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-title skills-title"><span>#</span>skills</h2>
+        </div>
+        <div class="col-md-5" style="text-align: center; margin-top: 20px">
+          <div class="design-image">
+            <img src="./img/background-skills-2.png" alt="Decorative background for skills section" />
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="grid-skills">
+            <div class="box-skills" data-aos="zoom-in">
+              <div class="header-skills">
+                <h4>Languages</h4>
               </div>
+              <div class="body-skills">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-skills" data-aos="zoom-in">
+              <div class="header-skills">
+                <h4>Tools</h4>
+              </div>
+              <div class="body-skills">
+                <ul>
+                  <li>Adobe XD</li>
+                  <li>Photoshop</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-skills" data-aos="zoom-in">
+              <div class="header-skills">
+                <h4>Library</h4>
+              </div>
+              <div class="body-skills">
+                <ul>
+                  <li>jQuery (a JavaScript library)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-skills" data-aos="zoom-in" style="grid-column: 2/3">
+              <div class="header-skills">
+                <h4>Frameworks</h4>
+              </div>
+              <div class="body-skills">
+                <ul>
+                  <li>Vue.js</li>
+                  <li>CakePHP</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="box-skills" data-aos="zoom-in" style="grid-column: 3/4">
+              <div class="header-skills">
+                <h4>Other</h4>
+              </div>
+              <div class="body-skills">
+                <ul>
+                  <li>WordPress (CMS)</li>
+                  <li>Fontawesome (icon set)</li>
+                  <li>MySQL (database management)</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End contacts-->
-    
-    <!-- Start Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <div class="d-flex align-items-md-center gap-4">
-              <div class="logo">
-                <img src="img/logo.png" alt="Logo Footer" loading="lazy">
-              </div>
-              <a href="mailto:en.developer2@gmail.com">en.developer2@gmail.com</a>
-            </div>
-            <p class="job_title">Web designer and front-end developer</p>
+  </section>
+  <!-- End Skills-->
+
+  <!-- 
+      =========================================
+      START About Me
+      =========================================
+      * Updated text to be more creative and mention your leadership mindset
+    -->
+  <section class="about-me" id="scroll_about" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-title about-me-title"><span>#</span>about-me</h2>
+          <div class="content">
+            <p>Hello, I'm Eslam!</p>
+            <p>
+              I am a self-taught front-end developer based in Qalyubia, Egypt.
+              My expertise lies in building responsive websites from scratch
+              and transforming them into modern, user-friendly experiences.
+            </p>
+            <p>
+              For over 5 years, I have pursued my creative passion—merging
+              design and code to deliver impactful digital solutions. I
+              believe every pixel and every line of code can tell a story when
+              crafted with precision.
+            </p>
+            <p>
+              I am currently a <strong>Team Leader at Taktek</strong>, guiding
+              a dynamic team to create innovative news platforms, podcast
+              portals, and cutting-edge web applications. My approach revolves
+              around continuous learning, whether it's adopting new frameworks
+              or exploring the latest trends in UI/UX.
+            </p>
+            <p>
+              I'm always eager to collaborate with like-minded professionals
+              and clients to build digital products that resonate with users
+              and elevate brands.
+            </p>
+            <a href="#" class="btn">Read more -></a>
           </div>
-          <div class="col-md-4 text-end">
-            <h4 class="media">Media</h4>
-            <div class="icons">
-              <ul>
-                <li class="github">
-                  <a href="https://github.com/imsemoo">
-                    <i class="fa-brands fa-github fa-lg"></i>          
-                  </a>
-                </li>
-                <li class="figma">
-                  <a href="#">
-                    <i class="fa-brands fa-figma fa-lg"></i>          
-                  </a>
-                </li>
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/imsemooo/">
-                    <i class="fa-brands fa-linkedin fa-lg"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <p class="copyright">© Copyright 2022. Made by Elias</p>
+        </div>
+        <div class="col-md-6">
+          <div class="images" data-aos="zoom-in">
+            <img src="img/about-avatar.png" alt="Eslam personal avatar about me" loading="lazy" />
           </div>
         </div>
       </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
+  </section>
+  <!-- End About Me-->
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/fontawesome.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- 
+      =========================================
+      START Resume
+      =========================================
+      * Added your Taktek role (2025 - Present) with creative text
+    -->
+  <section class="resume" id="scroll_resume" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="section-title resume-title"><span>#</span>resume</h2>
+          <div class="grid-col2">
+            <div class="left-col">
+              <h3 class="resume-title">Work Experience</h3>
+
+              <!-- Taktek Experience -->
+              <div class="resume-item" data-aos="fade-right">
+                <h4>
+                  Team Leader @ Taktek
+                  <span class="text-bold">(Full-time)</span>
+                </h4>
+                <h5>2025 - Present</h5>
+                <p><em>Istanbul, Türkiye</em></p>
+                <ul>
+                  <li>
+                    Leading a front-end team to build advanced
+                    <strong>news platforms</strong> and
+                    <strong>podcast portals</strong> with modern design
+                    principles.
+                  </li>
+                  <li>
+                    Overseeing UI/UX strategies, implementing custom
+                    animations using GSAP, and ensuring top-notch performance
+                    across devices.
+                  </li>
+                  <li>
+                    Collaborating with back-end developers to integrate APIs
+                    and data feeds seamlessly, while maintaining a user-first
+                    approach.
+                  </li>
+                  <li>
+                    Mentoring junior developers, conducting code reviews, and
+                    championing best practices in web development.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- InTimeDev Experience -->
+              <div class="resume-item" data-aos="fade-right">
+                <h4>
+                  Frontend Developer @ InTimeDev (Outsource to SilverTrees)
+                  <span class="text-bold">(Full-time)</span>
+                </h4>
+                <h5>2020 - 2025</h5>
+                <p><em>Nasr City, Egypt</em></p>
+                <ul>
+                  <li>
+                    Gained extensive experience working with a professional
+                    team, delivering multiple projects from scratch.
+                  </li>
+                  <li>
+                    Built both custom-coded and WordPress-based websites from
+                    PSD/Adobe XD files.
+                  </li>
+                  <li>
+                    Focused on responsive design, cross-browser compatibility,
+                    and performance optimization.
+                  </li>
+                </ul>
+              </div>
+              <!-- Add more roles if needed -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Resume-->
+
+  <!-- 
+      =========================================
+      START Contacts
+      =========================================
+    -->
+  <section class="contacts" id="scroll_contacts" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-title contacts-title"><span>#</span>contacts</h2>
+          <p>
+            I’m interested in freelance opportunities. However, if you have
+            another request or question, don’t hesitate to contact me.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="box-contacts">
+            <h4>Message me here</h4>
+            <ul>
+              <li>
+                <a href="mailto:en.developer2@gmail.com" rel="noopener"><i class="fa fa-envelope"></i> Contact Us</a>
+              </li>
+              <li>
+                <a href="tel:+201002952013" rel="noopener"><i class="fa-solid fa-phone"></i>+201002952013</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/imsemooo/" target="_blank" rel="noopener"><i
+                    class="fa-brands fa-linkedin"></i>islam-abdelnasser</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="box-form">
+            <h4>Contact Me</h4>
+            <form action="contact.php" method="POST">
+              <div class="d-flex">
+                <div class="form-floating">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="name" required />
+                  <label for="name">Name:</label>
+                </div>
+                <div class="form-floating">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com"
+                    required />
+                  <label for="email">Email:</label>
+                </div>
+              </div>
+              <div class="form-floating">
+                <textarea id="message" name="message" rows="8" style="height: 180px" class="form-control"
+                  placeholder="Message" required>
+Please Write message</textarea>
+                <label for="message">Message:</label>
+              </div>
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contacts-->
+
+  <!-- 
+      =========================================
+      START Footer
+      =========================================
+    -->
+  <footer data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="d-flex align-items-md-center gap-4">
+            <div class="logo">
+              <img src="img/logo.svg" alt="Footer personal logo" loading="lazy" width="140px" />
+            </div>
+            <a href="mailto:en.developer2@gmail.com" rel="noopener">en.developer2@gmail.com</a>
+          </div>
+          <p class="job_title">Web designer and front-end developer</p>
+        </div>
+        <div class="col-md-4 text-end">
+          <h4 class="media">Media</h4>
+          <div class="icons">
+            <ul>
+              <li class="github">
+                <a href="https://github.com/imsemoo" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+              </li>
+              <li class="figma">
+                <a href="#" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-figma fa-lg"></i>
+                </a>
+              </li>
+              <li class="linkedin">
+                <a href="https://www.linkedin.com/in/imsemooo/" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-linkedin fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <p class="copyright">© Copyright 2023. Made by Eslam</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- 
+      =========================================
+      JavaScript Files 
+      =========================================
+    -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/fontawesome.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
 
 </html>
