@@ -17,6 +17,7 @@ body {
   margin: 0;
   font-family: 'FiraCode-Regular';
   background: var(--main);
+  overflow-x: hidden;
 }
 
 .container-fluid .row>* {
@@ -313,6 +314,7 @@ p {
   text-align: right;
   padding: 10px 20px;
 }
+
 .navbar.fixed {
   padding: 20px 0;
   position: fixed;
@@ -321,6 +323,7 @@ p {
   z-index: 99;
   box-shadow: inset 0px -4px 4px -4px #b85dbc;
 }
+
 /* End Navbar */
 
 /* Start header */
@@ -1323,4 +1326,46 @@ footer .copyright {
   .resume .resume-title {
     margin-top: 0;
   }
+}
+
+/* Motion tokens and canvas layers (Three.js + GSAP) */
+:root {
+  --ease-hero: cubic-bezier(.16, 1, .3, 1);
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --dur-hero: .9s;
+  --dur-ui: .4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important
+  }
+
+  .is-motion {
+    display: none !important
+  }
+}
+
+/* Keep hero canvas behind content and non-interactive */
+.hero {
+  position: relative;
+  overflow: clip
+}
+
+.hero__canvas,
+.skills__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0
+}
+
+/* Ensure existing sections host the layers without layout changes */
+.header {
+  position: relative
+}
+
+.skills {
+  position: relative
 }
