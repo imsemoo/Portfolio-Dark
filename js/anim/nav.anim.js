@@ -3,6 +3,8 @@
 export function initNav({ gsap }) {
   const nav = document.querySelector('nav.navbar');
   if (!nav) return;
+  // Enable scoped override styles to avoid conflicting hover transforms
+  nav.classList.add('nav-motion');
 
   // Toggle aria-expanded on the bootstrap toggler for accessibility
   const toggler = nav.querySelector('.navbar-toggler');
@@ -17,8 +19,8 @@ export function initNav({ gsap }) {
   // Smooth hover emphasis on links (non-intrusive)
   const links = nav.querySelectorAll('.navbar-nav .nav-link');
   links.forEach((a) => {
-    a.addEventListener('mouseenter', () => gsap.to(a, { duration: 0.2, color: '#FFF', backgroundColor: 'var(--primary)', borderRadius: 4, paddingInline: 12 }));
-    a.addEventListener('mouseleave', () => gsap.to(a, { duration: 0.25, clearProps: 'backgroundColor,borderRadius,paddingInline,color' }));
+    a.addEventListener('mouseenter', () => gsap.to(a, { duration: 0.18, color: '#FFF', backgroundColor: 'var(--primary)', borderRadius: 4 }));
+    a.addEventListener('mouseleave', () => gsap.to(a, { duration: 0.22, clearProps: 'backgroundColor,borderRadius,color' }));
   });
 
   // Active state by section in view

@@ -6,6 +6,7 @@ import { initNav } from './anim/nav.anim.js';
 import { initSections } from './anim/sections.anim.js';
 import { initCards } from './anim/cards.anim.js';
 import { initContact } from './anim/contact.anim.js';
+import { initLinksTree } from './anim/linksTree.anim.js';
 
 const libs = (window.__LIBS__ || {});
 const { gsap, ScrollTrigger } = libs;
@@ -38,6 +39,8 @@ function main() {
 
   // 1) Nav/UI micro-interactions
   initNav({ gsap });
+  // Links-tree premium interactions
+  initLinksTree({ gsap, reduced });
 
   const scenes = [];
 

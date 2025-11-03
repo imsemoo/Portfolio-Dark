@@ -235,8 +235,12 @@ p {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link span {
-  color: var(--primary, #C778DD);
+  color: inherit;
 
+}
+
+.navbar-nav {
+  gap: 20px;
 }
 
 .navbar-brand {
@@ -1368,4 +1372,47 @@ footer .copyright {
 
 .skills {
   position: relative
+}
+
+/* Links tree premium interactions */
+.links-tree {
+  transform-origin: top left
+}
+
+.links-tree ul,
+.links-tree li {
+  will-change: transform
+}
+
+.links-tree ul li img {
+  transform-origin: top center
+}
+
+.links-tree a {
+  position: relative
+}
+
+.links-tree a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 6px
+}
+
+/* Navbar hover effect fixes (avoid conflicting transforms) */
+.nav-motion .nav-item .nav-link {
+  text-shadow: none;
+  transform: none;
+  transition: color .25s ease, background-color .25s ease;
+}
+
+.nav-motion .nav-item:hover .nav-link,
+.nav-motion .nav-item.hover .nav-link {
+  text-shadow: none;
+  transform: none;
+}
+
+.navbar .nav-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 6px
 }
