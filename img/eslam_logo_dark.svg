@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <style>
+      .title { font: 700 72px Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; fill: #fff; letter-spacing: 0.5px; }
+      .subtitle { font: 400 26px Inter, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; fill: #dfe6f3; }
+    </style>
+  </defs>
+  <!-- Transparent canvas so it works on any dark background -->
+  <rect width="100%" height="100%" fill="none"/>
+  <!-- Icon: rounded hex with stylized "E" -->
+  <g transform="translate(30,30)">
+    <rect x="0" y="0" rx="22" ry="22" width="200" height="200" fill="#3967DC"/>
+    <!-- Stylized E (negative lines) -->
+    <rect x="44" y="54" width="112" height="14" fill="#ffffff" rx="7"/>
+    <rect x="44" y="93" width="92" height="14" fill="#ffffff" rx="7"/>
+    <rect x="44" y="132" width="112" height="14" fill="#ffffff" rx="7"/>
+    <!-- Accent diagonal cut -->
+    <path d="M156 85 L176 65 L176 105 Z" fill="#ffffff" opacity="0.85"/>
+  </g>
+  <!-- Text block -->
+  <g transform="translate(260,88)">
+    <text class="title">Eslam</text>
+    <text class="subtitle" y="62">UI/UX &amp; Front-End Lead</text>
+  </g>
+</svg>

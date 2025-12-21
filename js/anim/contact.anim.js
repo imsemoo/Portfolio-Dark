@@ -31,6 +31,12 @@ export function initContact({ gsap }) {
   }
 
   form.addEventListener('submit', (e) => {
+    const act = (form.getAttribute('action') || '').trim();
+    const isMailto = act.startsWith('mailto:');
+    if (isMailto) {
+      // Let the browser handle mailto submit (opens default mail client)
+      return;
+    }
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     if (!btn) return;
@@ -52,4 +58,3 @@ export function initContact({ gsap }) {
     }, 1200);
   });
 }
-

@@ -73,7 +73,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="img/logo.svg" alt="Eslam Nasser personal logo" loading="lazy" width="140" />
+        <img src="img/eslam_logo_dark.svg" alt="Eslam Nasser personal logo" loading="lazy" width="220" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,21 +164,24 @@
         <div class="col-md-12">
           <div class="projects-header">
             <h2 class="projects-title section-title"><span>#</span>projects</h2>
-            <a href="#" aria-label="View selected work">View Selected Work</a>
+            <!-- <a href="#" aria-label="View selected work">View Selected Work</a> -->
           </div>
 
           <div id="filter-gallary" role="tablist" aria-label="Project filter">
             <button class="btn active" data-category="all">All</button>
-            <button class="btn" data-category="Web-design">Web Design</button>
-            <button class="btn" data-category="WordPress">WordPress</button>
-            <button class="btn" data-category="ui-ux">UI/UX</button>
-            <button class="btn" data-category="apps">Apps Flutter</button>
+            <button class="btn" data-category="design">Design (Figma)</button>
+            <button class="btn" data-category="frontend">Front-End (HTML/CSS/JS)</button>
+            <button class="btn" data-category="vue">Vue.js</button>
+            <button class="btn" data-category="js-scripts">JS Scripts</button>
+            <button class="btn" data-category="wordpress">WordPress</button>
+            <button class="btn" data-category="automation-bots">Automation / Booking Bots</button>
           </div>
+
 
           <!-- Project Cards Grid -->
           <div class="grid-container">
             <!-- Card 1 -->
-            <div class="card" data-category="Web-design">
+            <div class="card" data-category="design, frontend">
               <div class="card-img-top">
                 <img src="img/besa/cover.svg" loading="lazy" alt="Besa education website preview" />
               </div>
@@ -206,9 +209,9 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="card" data-category="Web-design">
+            <div class="card" data-category="design, frontend">
               <div class="card-img-top">
-                <img src="img/tv/HandsOnTV_Pages_2.png" loading="lazy" alt="HandsOnTV entertainment site preview" />
+                <img src="img/tv/Template.png" loading="lazy" alt="HandsOnTV entertainment site preview" />
               </div>
               <div class="technologies">
                 <ul>
@@ -232,7 +235,7 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="card" data-category="WordPress">
+            <div class="card" data-category="wordpress, design">
               <div class="card-img-top">
                 <img src="img/visaoman/1.png" alt="VisaOman travel site preview" loading="lazy" />
               </div>
@@ -255,7 +258,7 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="card" data-category="Web-design">
+            <div class="card" data-category="frontend, js-scripts">
               <div class="card-img-top">
                 <img src="img/cn/couriernow-home_1.png" alt="CourierNow website preview" loading="lazy" />
               </div>
@@ -276,6 +279,31 @@
                 <p class="card-text">From Adobe XD to production-ready code.</p>
                 <div class="buttons">
                   <a href="https://couriernow.com.au/" class="btn" target="_blank" rel="noopener">Live &lt;~></a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card" data-category="wordpress, design">
+              <div class="card-img-top">
+                <img src="img/abaad/Template.png" alt="CourierNow website preview" loading="lazy" />
+              </div>
+              <div class="technologies">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>WordPress</li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Abaad Future</h5>
+                <p class="card-text">Built a fast, scalable WordPress site for Abaad Future Company—a leader in events,
+                  conferences, and media production since 2007—focused on clear service discovery, SEO, and lead
+                  generation.</p>
+                <div class="buttons">
+                  <a href="https://abaad-intl.com/" class="btn" target="_blank" rel="noopener">Live &lt;~></a>
                 </div>
               </div>
             </div>
@@ -505,7 +533,8 @@
         <div class="col-md-12">
           <div class="box-form">
             <h4>Contact Me</h4>
-            <form action="contact.php" method="POST">
+            <form action="mailto:en.developer2@gmail.com?subject=Portfolio%20Contact%20-%20Eslam%20Nasser" method="POST"
+              enctype="text/plain">
               <div class="d-flex">
                 <div class="form-floating">
                   <input type="text" id="name" name="name" class="form-control" placeholder="name" required />
@@ -540,7 +569,7 @@
         <div class="col-md-8">
           <div class="d-flex align-items-md-center gap-4">
             <div class="logo">
-              <img src="img/logo.svg" alt="Footer personal logo" loading="lazy" width="140" />
+              <img src="img/eslam_logo_dark.svg" alt="Footer personal logo" loading="lazy" width="140" />
             </div>
             <a href="mailto:en.developer2@gmail.com" rel="noopener">en.developer2@gmail.com</a>
           </div>

@@ -1,6 +1,6 @@
 :root {
   --main: #000;
-  --primary: #C778DD;
+  --primary: #3967DC;
   --gray: #ABB2BF;
   --white: #FFF;
 
@@ -240,7 +240,7 @@ p {
 }
 
 .navbar-nav {
-  gap: 20px;
+  gap: 10px;
 }
 
 .navbar-brand {
@@ -632,8 +632,30 @@ p {
 
 #filter-gallary {
   margin: 40px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
+/* Filter: hide via class (no inline styles) */
+.grid-container .card.is-hidden {
+  display: none;
+  /* أو بدلها بــ opacity/transform لو عايز ترانزيشن */
+}
+
+/* (اختياري) لو عايز ترانزيشن بدل الإخفاء المفاجئ:
+.grid-container .card {
+  transition: opacity .25s ease, transform .25s ease;
+}
+.grid-container .card.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(.98);
+  /* وبدل display:none بخاصيات أعلاه *
+}
+*/
 
 .projects .btn:before {
   display: none;
@@ -992,6 +1014,15 @@ p {
   margin-top: -2px;
   border-left: 2px solid var(--gray, #ABB2BF);
   position: relative;
+}
+
+.resume .resume-item p {
+  color: #bcc2cd;
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .resume .resume-item::before {
