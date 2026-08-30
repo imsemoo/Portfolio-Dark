@@ -1,0 +1,36 @@
+[build]
+  publish = "."
+
+# Security headers. Nothing here is site-specific — these are the defaults a
+# static site should have had from the start.
+#
+# No Content-Security-Policy: a CSP that is wrong is worse than none, and it
+# cannot be written blind. Add one once the inline scripts and third-party
+# origins on this site have actually been enumerated.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+# Fonts and images change by being replaced, not edited, so they can be held.
+# CSS and JS are left on Netlify's ETag default — this project busts them with
+# ?v=N, and a long max-age on a file whose name never changes is how a stale
+# stylesheet outlives the deploy that replaced it.
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/webfonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
